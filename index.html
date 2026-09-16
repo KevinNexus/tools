@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L14NGPJR6H"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LI4NGPJR6H"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-L14NGPJR6H');
+        gtag('config', 'G-LI4NGPJR6H');
     </script>
-
     <title>资源公社 · 超级工具箱</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
     <style>
         :root {
             --primary: #6366f1;
@@ -34,7 +32,6 @@
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
-
         [data-theme="dark"] {
             --bg: #0b1120;
             --surface: #1e293b;
@@ -42,13 +39,7 @@
             --text-secondary: #94a3b8;
             --border: #334155;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', sans-serif;
             background: var(--bg);
@@ -68,13 +59,11 @@
             top: 0;
             z-index: 1000;
         }
-
         .ad-banner a {
             color: white;
             text-decoration: underline;
             font-weight: 700;
         }
-
         .ad-banner .close-ad {
             position: absolute;
             right: 16px;
@@ -93,22 +82,15 @@
 
         .bg-gradient {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             height: 500px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
             z-index: -1;
             animation: gradientShift 15s ease infinite;
         }
-
         @keyframes gradientShift {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.8;
-            }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
         }
 
         .hero {
@@ -116,7 +98,6 @@
             text-align: center;
             color: white;
         }
-
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -130,28 +111,24 @@
             margin-bottom: 24px;
             border: 1px solid rgba(255,255,255,0.3);
         }
-
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 800;
             margin-bottom: 16px;
             letter-spacing: -1px;
         }
-
         .hero p {
             font-size: 1.25rem;
             opacity: 0.95;
             max-width: 600px;
             margin: 0 auto 32px;
         }
-
         .hero-buttons {
             display: flex;
             gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
         }
-
         .btn-primary {
             display: inline-flex;
             align-items: center;
@@ -168,12 +145,7 @@
             border: none;
             cursor: pointer;
         }
-
-        .btn-primary:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 25px 40px -5px rgba(0,0,0,0.2);
-        }
-
+        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 25px 40px -5px rgba(0,0,0,0.2); }
         .btn-secondary {
             display: inline-flex;
             align-items: center;
@@ -189,12 +161,7 @@
             transition: all 0.3s;
             cursor: pointer;
         }
-
-        .btn-secondary:hover {
-            background: rgba(255,255,255,0.25);
-            transform: translateY(-2px);
-        }
-
+        .btn-secondary:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
         .stats {
             display: flex;
             justify-content: center;
@@ -202,35 +169,21 @@
             margin-top: 48px;
             flex-wrap: wrap;
         }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 14px;
-            opacity: 0.9;
-        }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2.5rem; font-weight: 800; display: block; }
+        .stat-label { font-size: 14px; opacity: 0.9; }
 
         .main-container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px 80px;
         }
-
         .search-section {
             margin: -40px auto 40px;
             max-width: 800px;
             position: relative;
             z-index: 10;
         }
-
         .search-box {
             background: var(--surface);
             border-radius: 20px;
@@ -242,36 +195,14 @@
             border: 2px solid var(--border);
             transition: all 0.3s;
         }
-
-        .search-box:focus-within {
-            border-color: var(--primary);
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
-        }
-
-        .search-icon {
-            width: 24px;
-            height: 24px;
-            color: var(--text-secondary);
-            margin-left: 16px;
-        }
-
+        .search-box:focus-within { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1); }
+        .search-icon { width: 24px; height: 24px; color: var(--text-secondary); margin-left: 16px; }
         .search-input {
-            flex: 1;
-            padding: 16px 0;
-            border: none;
-            background: transparent;
-            font-size: 16px;
-            color: var(--text);
-            font-family: inherit;
+            flex: 1; padding: 16px 0; border: none; background: transparent;
+            font-size: 16px; color: var(--text); font-family: inherit;
         }
-
-        .search-input:focus {
-            outline: none;
-        }
-
-        .search-input::placeholder {
-            color: var(--text-secondary);
-        }
+        .search-input:focus { outline: none; }
+        .search-input::placeholder { color: var(--text-secondary); }
 
         .categories {
             display: flex;
@@ -280,7 +211,6 @@
             flex-wrap: wrap;
             margin-bottom: 48px;
         }
-
         .category-chip {
             padding: 12px 24px;
             background: var(--surface);
@@ -295,12 +225,7 @@
             gap: 8px;
             box-shadow: var(--shadow);
         }
-
-        .category-chip:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
+        .category-chip:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
         .category-chip.active {
             background: linear-gradient(135deg, var(--primary), var(--accent));
             border-color: var(--primary);
@@ -312,7 +237,6 @@
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
             gap: 24px;
         }
-
         .tool-card {
             background: var(--surface);
             border-radius: 20px;
@@ -323,103 +247,42 @@
             position: relative;
             overflow: hidden;
         }
-
         .tool-card::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             height: 4px;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             transform: scaleX(0);
             transition: transform 0.3s;
         }
-
-        .tool-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .tool-card:hover::before {
-            transform: scaleX(1);
-        }
-
+        .tool-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); }
+        .tool-card:hover::before { transform: scaleX(1); }
         .tool-badge {
             position: absolute;
-            top: 16px;
-            right: 16px;
+            top: 16px; right: 16px;
             padding: 4px 12px;
             border-radius: 20px;
             font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
         }
-
-        .badge-new {
-            background: var(--success);
-            color: white;
-        }
-
-        .badge-hot {
-            background: var(--warning);
-            color: white;
-        }
-
-        .badge-free {
-            background: var(--primary);
-            color: white;
-        }
-
-        .badge-featured {
-            background: linear-gradient(135deg, #ec4899, #f59e0b);
-            color: white;
-        }
-
-        .tool-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            margin-bottom: 16px;
-        }
-
+        .badge-new { background: var(--success); color: white; }
+        .badge-hot { background: var(--warning); color: white; }
+        .badge-free { background: var(--primary); color: white; }
+        .badge-featured { background: linear-gradient(135deg, #ec4899, #f59e0b); color: white; }
+        .tool-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
         .tool-icon {
-            width: 60px;
-            height: 60px;
+            width: 60px; height: 60px;
             background: linear-gradient(135deg, var(--primary), var(--accent));
             border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 800;
-            font-size: 24px;
-            flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 800; font-size: 24px; flex-shrink: 0;
         }
-
-        .tool-info {
-            flex: 1;
-        }
-
-        .tool-name {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-
-        .tool-desc {
-            color: var(--text-secondary);
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        .tool-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-
+        .tool-info { flex: 1; }
+        .tool-name { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+        .tool-desc { color: var(--text-secondary); font-size: 14px; line-height: 1.5; }
+        .tool-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
         .tag {
             padding: 6px 12px;
             background: var(--bg);
@@ -428,84 +291,39 @@
             font-weight: 600;
             color: var(--text-secondary);
         }
-
-        .tool-actions {
-            display: flex;
-            gap: 12px;
-        }
-
+        .tool-actions { display: flex; gap: 12px; }
         .btn-visit {
-            flex: 1;
-            padding: 12px 20px;
+            flex: 1; padding: 12px 20px;
             background: linear-gradient(135deg, var(--primary), var(--accent));
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 14px;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
+            color: white; text-align: center; text-decoration: none;
+            border-radius: 12px; font-weight: 600; font-size: 14px;
+            transition: all 0.3s; border: none; cursor: pointer;
         }
-
-        .btn-visit:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
-        }
-
+        .btn-visit:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4); }
         .btn-copy {
             padding: 12px 20px;
-            background: var(--bg);
-            color: var(--text);
-            border: 2px solid var(--border);
-            border-radius: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
+            background: var(--bg); color: var(--text);
+            border: 2px solid var(--border); border-radius: 12px;
+            font-weight: 600; cursor: pointer; transition: all 0.3s;
         }
-
-        .btn-copy:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
+        .btn-copy:hover { border-color: var(--primary); color: var(--primary); }
 
         .theme-toggle {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background: var(--surface);
-            border: 2px solid var(--border);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: var(--shadow-xl);
-            transition: all 0.3s;
-            z-index: 100;
-            font-size: 24px;
+            position: fixed; bottom: 30px; right: 30px;
+            width: 60px; height: 60px;
+            background: var(--surface); border: 2px solid var(--border);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            cursor: pointer; box-shadow: var(--shadow-xl);
+            transition: all 0.3s; z-index: 100; font-size: 24px;
         }
-
-        .theme-toggle:hover {
-            transform: rotate(15deg) scale(1.1);
-        }
+        .theme-toggle:hover { transform: rotate(15deg) scale(1.1); }
 
         .footer {
-            text-align: center;
-            padding: 60px 20px 40px;
-            border-top: 1px solid var(--border);
-            margin-top: 80px;
+            text-align: center; padding: 60px 20px 40px;
+            border-top: 1px solid var(--border); margin-top: 80px;
             color: var(--text-secondary);
         }
-
-        .footer a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
+        .footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
 
         /* 汇率计算器样式 */
         .converter-card {
@@ -518,22 +336,13 @@
             overflow: hidden;
             margin-bottom: 20px;
         }
-
         .converter-card::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: url("image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
-
-        .converter-card > * {
-            position: relative;
-            z-index: 1;
-        }
-
+        .converter-card > * { position: relative; z-index: 1; }
         .converter-title {
             font-size: 28px;
             font-weight: 800;
@@ -542,13 +351,11 @@
             align-items: center;
             gap: 12px;
         }
-
         .converter-subtitle {
             opacity: 0.85;
             margin-bottom: 32px;
             font-size: 15px;
         }
-
         .converter-input-row {
             display: flex;
             gap: 16px;
@@ -556,12 +363,10 @@
             flex-wrap: wrap;
             align-items: end;
         }
-
         .converter-input-group {
             flex: 1;
             min-width: 200px;
         }
-
         .converter-input-group label {
             display: block;
             font-size: 13px;
@@ -569,7 +374,6 @@
             margin-bottom: 6px;
             opacity: 0.9;
         }
-
         .converter-input-group input,
         .converter-input-group select {
             width: 100%;
@@ -584,23 +388,14 @@
             backdrop-filter: blur(10px);
             transition: all 0.3s;
         }
-
-        .converter-input-group input::placeholder {
-            color: rgba(255,255,255,0.5);
-        }
-
+        .converter-input-group input::placeholder { color: rgba(255,255,255,0.5); }
         .converter-input-group input:focus,
         .converter-input-group select:focus {
             outline: none;
             border-color: white;
             background: rgba(255,255,255,0.25);
         }
-
-        .converter-input-group select option {
-            color: #333;
-            background: white;
-        }
-
+        .converter-input-group select option { color: #333; background: white; }
         .converter-convert-btn {
             padding: 14px 40px;
             background: white;
@@ -613,12 +408,7 @@
             transition: all 0.3s;
             white-space: nowrap;
         }
-
-        .converter-convert-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
+        .converter-convert-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         .converter-result {
             background: rgba(255,255,255,0.1);
             border-radius: 16px;
@@ -628,30 +418,19 @@
             border: 1px solid rgba(255,255,255,0.2);
             display: none;
         }
-
-        .converter-result.show {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-
+        .converter-result.show { display: block; animation: fadeIn 0.3s ease; }
         .converter-result-text {
             font-size: 32px;
             font-weight: 800;
             margin-bottom: 8px;
         }
-
-        .converter-rate {
-            font-size: 14px;
-            opacity: 0.8;
-        }
-
+        .converter-rate { font-size: 14px; opacity: 0.8; }
         .multi-rates {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 12px;
             margin-top: 24px;
         }
-
         .multi-rate-item {
             background: rgba(255,255,255,0.08);
             border-radius: 12px;
@@ -659,32 +438,14 @@
             text-align: center;
             border: 1px solid rgba(255,255,255,0.15);
         }
-
-        .multi-rate-currency {
-            font-size: 12px;
-            opacity: 0.8;
-            margin-bottom: 4px;
-        }
-
-        .multi-rate-value {
-            font-size: 20px;
-            font-weight: 700;
-        }
+        .multi-rate-currency { font-size: 12px; opacity: 0.8; margin-bottom: 4px; }
+        .multi-rate-value { font-size: 20px; font-weight: 700; }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        .tool-card {
-            animation: fadeIn 0.5s ease forwards;
-        }
+        .tool-card { animation: fadeIn 0.5s ease forwards; }
 
         .empty-state {
             text-align: center;
@@ -694,224 +455,217 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .tools-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats {
-                gap: 24px;
-            }
-
-            .stat-number {
-                font-size: 2rem;
-            }
-
-            .converter-card {
-                padding: 24px 16px;
-            }
-
-            .converter-title {
-                font-size: 22px;
-            }
-
-            .converter-result-text {
-                font-size: 24px;
-            }
-
-            .multi-rates {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .hero h1 { font-size: 2rem; }
+            .tools-grid { grid-template-columns: 1fr; }
+            .stats { gap: 24px; }
+            .stat-number { font-size: 2rem; }
+            .converter-card { padding: 24px 16px; }
+            .converter-title { font-size: 22px; }
+            .converter-result-text { font-size: 24px; }
+            .multi-rates { grid-template-columns: repeat(2, 1fr); }
         }
+
+        /* ===== 资源公社升级 UI ===== */
+        .section-title {
+            display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+            margin: 58px 0 22px;
+        }
+        .section-title h2 { font-size:26px; font-weight:800; letter-spacing:-.5px; }
+        .section-title p { color:var(--text-secondary); font-size:14px; margin-top:4px; }
+
+        .random-panel, .games-panel {
+            background:var(--surface);
+            border:1px solid var(--border);
+            border-radius:24px;
+            box-shadow:var(--shadow);
+            overflow:hidden;
+        }
+        .random-panel {
+            padding:28px;
+            display:grid;
+            grid-template-columns:1fr auto;
+            gap:24px;
+            align-items:center;
+            background:
+              radial-gradient(circle at 90% 10%, rgba(99,102,241,.14), transparent 34%),
+              var(--surface);
+        }
+        .random-copy { display:flex; gap:18px; align-items:center; }
+        .random-icon {
+            width:64px;height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;
+            font-size:30px; background:linear-gradient(135deg,var(--primary),var(--secondary)); color:#fff;
+            box-shadow:0 12px 30px rgba(99,102,241,.25); flex-shrink:0;
+        }
+        .random-result { margin-top:8px; font-weight:700; color:var(--primary); min-height:24px; }
+        .random-btn {
+            border:0; cursor:pointer; padding:14px 22px; border-radius:14px; color:#fff;
+            font-weight:800; font-size:15px; background:linear-gradient(135deg,var(--primary),var(--accent));
+            transition:.25s; white-space:nowrap;
+        }
+        .random-btn:hover { transform:translateY(-2px) scale(1.02); box-shadow:0 12px 24px rgba(99,102,241,.28); }
+
+        .games-panel { padding:26px; }
+        .game-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+        .game-card {
+            border:1px solid var(--border); border-radius:20px; padding:20px;
+            background:linear-gradient(145deg,rgba(99,102,241,.05),var(--surface));
+            transition:.25s; position:relative; overflow:hidden;
+        }
+        .game-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); }
+        .game-card h3 { font-size:18px; margin-bottom:5px; }
+        .game-card p { color:var(--text-secondary); font-size:13px; margin-bottom:16px; }
+        .game-btn {
+            width:100%; border:0; border-radius:12px; padding:11px 14px; cursor:pointer;
+            background:var(--bg); color:var(--text); border:1px solid var(--border); font-weight:700;
+            transition:.2s;
+        }
+        .game-btn:hover { border-color:var(--primary); color:var(--primary); }
+        .game-stage {
+            display:none; margin-top:14px; border-radius:16px; padding:16px;
+            background:var(--bg); border:1px solid var(--border); text-align:center;
+        }
+        .game-stage.show { display:block; animation:fadeIn .25s ease; }
+        .reaction-target {
+            width:100%; min-height:110px; border:0; border-radius:14px; cursor:pointer;
+            background:var(--surface); color:var(--text); font-size:18px; font-weight:800;
+            border:2px dashed var(--border);
+        }
+        .reaction-target.ready { background:linear-gradient(135deg,#10b981,#059669); color:#fff; border:0; }
+        .reaction-target.wait { background:linear-gradient(135deg,#f59e0b,#ef4444); color:#fff; border:0; }
+        .score-big { font-size:30px; font-weight:900; margin:6px 0; }
+        .memory-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:7px; margin-top:10px; }
+        .memory-card {
+            aspect-ratio:1; border:0; border-radius:10px; cursor:pointer; background:linear-gradient(135deg,var(--primary),var(--accent));
+            color:transparent; font-size:20px; font-weight:900;
+        }
+        .memory-card.open, .memory-card.matched { background:var(--surface); color:var(--text); border:1px solid var(--border); }
+        .game-status { font-size:12px; color:var(--text-secondary); margin-top:8px; min-height:18px; }
+
+        .favorites-bar {
+            display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px;
+            padding:12px 16px; background:var(--surface); border:1px solid var(--border); border-radius:14px;
+        }
+        .favorites-bar button { border:0; background:transparent; color:var(--primary); font-weight:700; cursor:pointer; }
+        .favorite-btn {
+            position:absolute; top:14px; right:14px; width:34px; height:34px; border-radius:50%;
+            border:1px solid var(--border); background:var(--surface); cursor:pointer; z-index:2;
+            font-size:16px; transition:.2s;
+        }
+        .favorite-btn:hover { transform:scale(1.08); }
+        .favorite-btn.active { color:#f59e0b; border-color:#f59e0b; background:rgba(245,158,11,.08); }
+
+        .floating-tg {
+            position:fixed; left:24px; bottom:24px; z-index:99;
+            display:flex; align-items:center; gap:8px; padding:12px 17px; border-radius:999px;
+            background:#229ed9; color:#fff; text-decoration:none; font-weight:800; font-size:13px;
+            box-shadow:0 12px 28px rgba(34,158,217,.32); transition:.25s;
+        }
+        .floating-tg:hover { transform:translateY(-3px); box-shadow:0 16px 34px rgba(34,158,217,.4); }
+
+        .tool-card .btn-visit { position:relative; }
+        .tool-card.favorite-card { box-shadow:0 0 0 1px rgba(245,158,11,.25), var(--shadow); }
+
+        @media (max-width: 900px) {
+            .game-grid { grid-template-columns:1fr; }
+            .random-panel { grid-template-columns:1fr; }
+            .random-btn { width:100%; }
+        }
+        @media (max-width: 768px) {
+            .section-title { margin-top:42px; }
+            .section-title h2 { font-size:22px; }
+            .random-copy { align-items:flex-start; }
+            .random-icon { width:54px;height:54px;font-size:25px; }
+            .games-panel, .random-panel { padding:20px; }
+            .floating-tg { left:14px; bottom:14px; }
+            .floating-tg span:last-child { display:none; }
+        }
+
     </style>
 </head>
-
 <body>
-
     <!-- 广告条 -->
     <div class="ad-banner" id="adBanner">
-        📢 TG 频道广告业务合作咨询：
-        <a href="https://t.me/mr518" target="_blank">@mr518</a>
+        📢 TG 频道广告业务合作咨询：<a href="https://t.me/mr518" target="_blank">@mr518</a>
         <button class="close-ad" onclick="document.getElementById('adBanner').style.display='none'">✕</button>
     </div>
 
     <div class="bg-gradient"></div>
-
+    
     <header class="hero">
         <div class="hero-badge">
             <span>🚀</span>
             <span>资源公社官方出品</span>
         </div>
-
         <h1>超级工具箱</h1>
-
-        <p>
-            精选 60+ 全球顶级免费工具，AI / Web3 / 效率 / 设计 / 开发，一站式导航
-        </p>
-
+        <p>精选 60+ 全球顶级免费工具，AI / Web3 / 效率 / 设计 / 开发，一站式导航</p>
         <div class="hero-buttons">
-
-            <!-- 顶部 Telegram 入口 + GA4 点击统计 -->
-            <a href="https://t.me/cxsns"
-               target="_blank"
-               class="btn-primary"
-               onclick="gtag('event', 'telegram_click', {
-                   event_category: 'Telegram',
-                   event_label: '顶部加入Telegram',
-                   link_url: 'https://t.me/cxsns'
-               });">
-
-                <svg width="20"
-                     height="20"
-                     viewBox="0 0 24 24"
-                     fill="currentColor">
-
+            <a href="https://t.me/cxsns" target="_blank" class="btn-primary"
+               onclick="trackTelegram('顶部加入Telegram');" >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
                 </svg>
-
                 加入 Telegram 频道
             </a>
-
-            <button class="btn-secondary"
-                    onclick="document.querySelector('.converter-card').scrollIntoView({behavior: 'smooth'})">
-
+            <button class="btn-secondary" onclick="document.querySelector('.converter-card').scrollIntoView({behavior: 'smooth'})">
                 汇率换算
-
-                <svg width="20"
-                     height="20"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2">
-
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 5v14M19 12l-7 7-7-7"/>
                 </svg>
             </button>
         </div>
-
         <div class="stats">
-
             <div class="stat-item">
                 <span class="stat-number">60+</span>
                 <span class="stat-label">精选工具</span>
             </div>
-
             <div class="stat-item">
                 <span class="stat-number">10+</span>
                 <span class="stat-label">分类覆盖</span>
             </div>
-
             <div class="stat-item">
                 <span class="stat-number">100%</span>
                 <span class="stat-label">免费使用</span>
             </div>
-
         </div>
     </header>
 
     <div class="search-section">
         <div class="search-box">
-
-            <svg class="search-icon"
-                 viewBox="0 0 24 24"
-                 fill="none"
-                 stroke="currentColor"
-                 stroke-width="2">
-
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="11" cy="11" r="8"></circle>
                 <path d="m21 21-4.35-4.35"></path>
-
             </svg>
-
-            <input type="text"
-                   class="search-input"
-                   id="searchInput"
-                   placeholder="搜索工具名称、描述或标签...">
-
+            <input type="text" class="search-input" id="searchInput" placeholder="搜索工具名称、描述或标签...">
         </div>
     </div>
 
     <div class="main-container">
-
         <div class="categories" id="categoryContainer">
-
-            <button class="category-chip active" data-category="all">
-                📦 全部工具
-            </button>
-
-            <button class="category-chip" data-category="ai">
-                🤖 AI 智能
-            </button>
-
-            <button class="category-chip" data-category="crypto">
-                💰 Web3 钱包
-            </button>
-
-            <button class="category-chip" data-category="productivity">
-                📊 效率办公
-            </button>
-
-            <button class="category-chip" data-category="design">
-                🎨 设计创作
-            </button>
-
-            <button class="category-chip" data-category="dev">
-                💻 开发工具
-            </button>
-
-            <button class="category-chip" data-category="media">
-                🎬 影音娱乐
-            </button>
-
-            <button class="category-chip" data-category="games">
-                🎮 在线游戏
-            </button>
-
-            <button class="category-chip" data-category="security">
-                🔒 安全隐私
-            </button>
-
-            <button class="category-chip" data-category="education">
-                📚 学习教育
-            </button>
-
+            <button class="category-chip active" data-category="all">📦 全部工具</button>
+            <button class="category-chip" data-category="ai">🤖 AI 智能</button>
+            <button class="category-chip" data-category="crypto">💰 Web3 钱包</button>
+            <button class="category-chip" data-category="productivity">📊 效率办公</button>
+            <button class="category-chip" data-category="design">🎨 设计创作</button>
+            <button class="category-chip" data-category="dev">💻 开发工具</button>
+            <button class="category-chip" data-category="media">🎬 影音娱乐</button>
+            <button class="category-chip" data-category="games">🎮 在线游戏</button>
+            <button class="category-chip" data-category="security">🔒 安全隐私</button>
+            <button class="category-chip" data-category="education">📚 学习教育</button>
         </div>
 
         <!-- 汇率计算器 -->
         <div class="converter-card" id="converterCard">
-
-            <div class="converter-title">
-                💱 USDT 实时汇率换算
-            </div>
-
-            <div class="converter-subtitle">
-                实时查询 USDT 兑全球 20+ 主流货币汇率，数据来源于 open.er-api.com
-            </div>
-
+            <div class="converter-title">💱 USDT 实时汇率换算</div>
+            <div class="converter-subtitle">实时查询 USDT 兑全球 20+ 主流货币汇率，数据来源于 open.er-api.com</div>
+            
             <div class="converter-input-row">
-
                 <div class="converter-input-group">
-
                     <label>USDT 数量</label>
-
-                    <input type="number"
-                           id="usdtAmount"
-                           placeholder="输入数量"
-                           value="100"
-                           min="0"
-                           step="any">
-
+                    <input type="number" id="usdtAmount" placeholder="输入数量" value="100" min="0" step="any">
                 </div>
-
                 <div class="converter-input-group">
-
                     <label>目标货币</label>
-
                     <select id="targetCurrency">
-
                         <option value="CNY">🇨 CNY 人民币</option>
                         <option value="USD">🇺🇸 USD 美元</option>
                         <option value="EUR">🇪🇺 EUR 欧元</option>
@@ -934,715 +688,196 @@
                         <option value="MXN">🇲🇽 MXN 墨西哥比索</option>
                         <option value="TRY">🇹🇷 TRY 土耳其里拉</option>
                         <option value="ZAR">🇿🇦 ZAR 南非兰特</option>
-
                     </select>
-
                 </div>
-
-                <button class="converter-convert-btn"
-                        id="convertBtn">
-                    🔄 立即换算
-                </button>
-
+                <button class="converter-convert-btn" id="convertBtn">🔄 立即换算</button>
             </div>
 
-            <div class="converter-result"
-                 id="converterResult">
-
-                <div class="converter-result-text"
-                     id="converterResultText"></div>
-
-                <div class="converter-rate"
-                     id="converterRate"></div>
-
+            <div class="converter-result" id="converterResult">
+                <div class="converter-result-text" id="converterResultText"></div>
+                <div class="converter-rate" id="converterRate"></div>
             </div>
 
-            <div class="multi-rates"
-                 id="multiRates"
-                 style="display:none;">
+            <div class="multi-rates" id="multiRates" style="display:none;">
+                <!-- 多币种汇率 -->
             </div>
-
         </div>
 
         <!-- 工具列表 -->
-        <div class="tools-grid"
-             id="toolsGrid">
+        <div class="favorites-bar" id="favoritesBar" style="display:none;">
+            <span>⭐ 已收藏 <strong id="favoriteCount">0</strong> 个工具</span>
+            <button id="showFavoritesBtn">只看收藏</button>
         </div>
+        <div class="tools-grid" id="toolsGrid"></div>
 
+
+        <!-- 随机发现工具 -->
+        <section class="discover-section">
+            <div class="section-title">
+                <div>
+                    <h2>🎲 随机发现</h2>
+                    <p>不知道用什么？让资源公社替你随机挑一个。</p>
+                </div>
+            </div>
+            <div class="random-panel">
+                <div class="random-copy">
+                    <div class="random-icon">🎲</div>
+                    <div>
+                        <h3 id="randomToolName">今天发现什么？</h3>
+                        <p id="randomToolDesc" style="color:var(--text-secondary);margin-top:4px;">点击右侧按钮，随机发现一个精选工具。</p>
+                        <div class="random-result" id="randomToolResult"></div>
+                    </div>
+                </div>
+                <button class="random-btn" id="randomToolBtn">✨ 随机一个工具</button>
+            </div>
+        </section>
+
+        <!-- 摸鱼小游戏 -->
+        <section class="games-section">
+            <div class="section-title">
+                <div>
+                    <h2>🎮 休息一下</h2>
+                    <p>找工具累了？玩一分钟再走。</p>
+                </div>
+            </div>
+            <div class="games-panel">
+                <div class="game-grid">
+                    <div class="game-card">
+                        <div style="font-size:30px;margin-bottom:8px;">🎯</div>
+                        <h3>反应力挑战</h3>
+                        <p>测试你的反应速度，看到绿色后马上点击。</p>
+                        <button class="game-btn" data-game="reaction">开始挑战</button>
+                        <div class="game-stage" id="reactionStage">
+                            <div class="game-status" id="reactionStatus">准备好后点击开始</div>
+                            <button class="reaction-target" id="reactionTarget">开始</button>
+                            <div class="score-big" id="reactionScore">—</div>
+                            <div class="game-status">个人最佳：<span id="reactionBest">—</span></div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div style="font-size:30px;margin-bottom:8px;">🧠</div>
+                        <h3>记忆翻牌</h3>
+                        <p>翻开相同图案，看看你能用几步完成。</p>
+                        <button class="game-btn" data-game="memory">开始游戏</button>
+                        <div class="game-stage" id="memoryStage">
+                            <div class="game-status" id="memoryStatus">配对 8 张牌</div>
+                            <div class="memory-grid" id="memoryGrid"></div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div style="font-size:30px;margin-bottom:8px;">⚡</div>
+                        <h3>点击挑战</h3>
+                        <p>10 秒内尽可能多点击，看看今天能拿多少分。</p>
+                        <button class="game-btn" data-game="clicker">开始挑战</button>
+                        <div class="game-stage" id="clickerStage">
+                            <div class="score-big" id="clickerScore">0</div>
+                            <button class="reaction-target" id="clickerTarget">点击我！</button>
+                            <div class="game-status" id="clickerStatus">准备开始</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+
+    <a href="https://t.me/cxsns" target="_blank" class="floating-tg"
+       onclick="trackTelegram('悬浮Telegram');">
+        <span>✈️</span><span>加入资源公社 Telegram</span>
+    </a>
+
     <footer class="footer">
-
-        <p style="font-size: 16px; margin-bottom: 8px;">
-            © 2026 资源公社 · 超级工具箱
-        </p>
-
-        <!-- 底部 Telegram 入口 + GA4 点击统计 -->
-        <p>
-            Telegram 频道：
-            <a href="https://t.me/cxsns"
-               target="_blank"
-               onclick="gtag('event', 'telegram_click', {
-                   event_category: 'Telegram',
-                   event_label: '底部Telegram',
-                   link_url: 'https://t.me/cxsns'
-               });">
-                @cxsns
-            </a>
-        </p>
-
-        <p style="margin-top: 16px; font-size: 13px;">
-            所有工具均为免费或提供免费额度，如有侵权请联系删除
-        </p>
-
+        <p style="font-size: 16px; margin-bottom: 8px;">© 2026 资源公社 · 超级工具箱</p>
+        <p>Telegram 频道：<a href="https://t.me/cxsns" target="_blank"
+            onclick="trackTelegram('底部Telegram');">@cxsns</a></p>
+        <p style="margin-top: 16px; font-size: 13px;">所有工具均为免费或提供免费额度，如有侵权请联系删除</p>
     </footer>
 
-    <button class="theme-toggle"
-            id="themeToggle"
-            title="切换主题">
-        🌙
-    </button>
+    <button class="theme-toggle" id="themeToggle" title="切换主题">🌙</button>
 
     <script>
-
         const TOOLS_DATA = [
-
             // 特色工具
-            {
-                id: 100,
-                name: "Telegram Web 轻量版",
-                desc: "Telegram 官方轻量网页版，无需安装，打开即用，适合快速收发消息",
-                category: "productivity",
-                tags: ["Telegram", "即时通讯", "网页版"],
-                link: "https://web.telegram.org/k/",
-                icon: "TG",
-                badge: "featured"
-            },
-
-            {
-                id: 101,
-                name: "TON 生态实时看板",
-                desc: "TON 区块链实时数据看板，查看 TPS、TVL、活跃地址、代币价格等核心指标",
-                category: "crypto",
-                tags: ["TON", "看板", "实时"],
-                link: "https://tonviewer.com",
-                icon: "TN",
-                badge: "hot"
-            },
-
-            {
-                id: 102,
-                name: "临时邮箱生成器",
-                desc: "在线生成一次性临时邮箱，保护隐私，接收验证码，无需注册",
-                category: "security",
-                tags: ["邮箱", "临时", "隐私"],
-                link: "https://temp-mail.org",
-                icon: "TE",
-                badge: "free"
-            },
-
+            { id: 100, name: "Telegram Web 轻量版", desc: "Telegram 官方轻量网页版，无需安装，打开即用，适合快速收发消息", category: "productivity", tags: ["Telegram", "即时通讯", "网页版"], link: "https://web.telegram.org/k/", icon: "TG", badge: "featured" },
+            { id: 101, name: "TON 生态实时看板", desc: "TON 区块链实时数据看板，查看 TPS、TVL、活跃地址、代币价格等核心指标", category: "crypto", tags: ["TON", "看板", "实时"], link: "https://tonviewer.com", icon: "TN", badge: "hot" },
+            { id: 102, name: "临时邮箱生成器", desc: "在线生成一次性临时邮箱，保护隐私，接收验证码，无需注册", category: "security", tags: ["邮箱", "临时", "隐私"], link: "https://temp-mail.org", icon: "TE", badge: "free" },
+            
             // AI 工具
-            {
-                id: 1,
-                name: "ChatGPT",
-                desc: "OpenAI 官方 AI 助手，对话/写作/编程/分析全能",
-                category: "ai",
-                tags: ["AI", "对话", "写作"],
-                link: "https://chat.openai.com",
-                icon: "CG",
-                badge: "hot"
-            },
-
-            {
-                id: 2,
-                name: "Claude",
-                desc: "Anthropic 出品，长文本处理能力强，适合文档分析",
-                category: "ai",
-                tags: ["AI", "文档"],
-                link: "https://claude.ai",
-                icon: "CL"
-            },
-
-            {
-                id: 3,
-                name: "Gemini",
-                desc: "Google AI 助手，多模态能力强，免费使用",
-                category: "ai",
-                tags: ["AI", "Google", "免费"],
-                link: "https://gemini.google.com",
-                icon: "GM",
-                badge: "free"
-            },
-
-            {
-                id: 4,
-                name: "Perplexity",
-                desc: "AI 搜索引擎，实时联网检索，带引用来源",
-                category: "ai",
-                tags: ["搜索", "AI"],
-                link: "https://www.perplexity.ai",
-                icon: "PX"
-            },
-
-            {
-                id: 5,
-                name: "Bing Image Creator",
-                desc: "微软 DALL-E 3 免费绘图，输入文字生成图片",
-                category: "ai",
-                tags: ["绘画", "AI", "免费"],
-                link: "https://www.bing.com/create",
-                icon: "BI",
-                badge: "free"
-            },
-
-            {
-                id: 6,
-                name: "Leonardo.AI",
-                desc: "专业 AI 绘图平台，每日免费额度",
-                category: "ai",
-                tags: ["绘画", "设计"],
-                link: "https://leonardo.ai",
-                icon: "LA"
-            },
-
-            {
-                id: 7,
-                name: "Hugging Face",
-                desc: "开源 AI 模型库，数千免费模型",
-                category: "ai",
-                tags: ["AI", "开源"],
-                link: "https://huggingface.co",
-                icon: "HF"
-            },
-
-            {
-                id: 8,
-                name: "Copy.ai",
-                desc: "AI 文案生成器，营销/社交媒体文案",
-                category: "ai",
-                tags: ["写作", "营销"],
-                link: "https://www.copy.ai",
-                icon: "CA"
-            },
-
-            {
-                id: 9,
-                name: "Midjourney",
-                desc: "顶级 AI 绘图工具，质量极高",
-                category: "ai",
-                tags: ["绘画", "AI"],
-                link: "https://www.midjourney.com",
-                icon: "MJ",
-                badge: "hot"
-            },
-
-            {
-                id: 10,
-                name: "Grammarly",
-                desc: "AI 语法检查和写作助手",
-                category: "ai",
-                tags: ["写作", "检查"],
-                link: "https://www.grammarly.com",
-                icon: "GR"
-            },
-
+            { id: 1, name: "ChatGPT", desc: "OpenAI 官方 AI 助手，对话/写作/编程/分析全能", category: "ai", tags: ["AI", "对话", "写作"], link: "https://chat.openai.com", icon: "CG", badge: "hot" },
+            { id: 2, name: "Claude", desc: "Anthropic 出品，长文本处理能力强，适合文档分析", category: "ai", tags: ["AI", "文档"], link: "https://claude.ai", icon: "CL" },
+            { id: 3, name: "Gemini", desc: "Google AI 助手，多模态能力强，免费使用", category: "ai", tags: ["AI", "Google", "免费"], link: "https://gemini.google.com", icon: "GM", badge: "free" },
+            { id: 4, name: "Perplexity", desc: "AI 搜索引擎，实时联网检索，带引用来源", category: "ai", tags: ["搜索", "AI"], link: "https://www.perplexity.ai", icon: "PX" },
+            { id: 5, name: "Bing Image Creator", desc: "微软 DALL-E 3 免费绘图，输入文字生成图片", category: "ai", tags: ["绘画", "AI", "免费"], link: "https://www.bing.com/create", icon: "BI", badge: "free" },
+            { id: 6, name: "Leonardo.AI", desc: "专业 AI 绘图平台，每日免费额度", category: "ai", tags: ["绘画", "设计"], link: "https://leonardo.ai", icon: "LA" },
+            { id: 7, name: "Hugging Face", desc: "开源 AI 模型库，数千免费模型", category: "ai", tags: ["AI", "开源"], link: "https://huggingface.co", icon: "HF" },
+            { id: 8, name: "Copy.ai", desc: "AI 文案生成器，营销/社交媒体文案", category: "ai", tags: ["写作", "营销"], link: "https://www.copy.ai", icon: "CA" },
+            { id: 9, name: "Midjourney", desc: "顶级 AI 绘图工具，质量极高", category: "ai", tags: ["绘画", "AI"], link: "https://www.midjourney.com", icon: "MJ", badge: "hot" },
+            { id: 10, name: "Grammarly", desc: "AI 语法检查和写作助手", category: "ai", tags: ["写作", "检查"], link: "https://www.grammarly.com", icon: "GR" },
+            
             // Web3 钱包
-            {
-                id: 11,
-                name: "TON Web Wallet",
-                desc: "TON 生态官方网页钱包，支持质押/Swap",
-                category: "crypto",
-                tags: ["TON", "钱包"],
-                link: "https://wallet.ton.org",
-                icon: "TW",
-                badge: "hot"
-            },
-
-            {
-                id: 12,
-                name: "MetaMask",
-                desc: "以太坊生态必备钱包，浏览器插件",
-                category: "crypto",
-                tags: ["以太坊", "钱包"],
-                link: "https://metamask.io",
-                icon: "MM"
-            },
-
-            {
-                id: 13,
-                name: "Phantom",
-                desc: "Solana 生态首选钱包，支持多链",
-                category: "crypto",
-                tags: ["Solana", "钱包"],
-                link: "https://phantom.app",
-                icon: "PH"
-            },
-
-            {
-                id: 14,
-                name: "DeBank",
-                desc: "跨链资产看板，一键查看全网钱包",
-                category: "crypto",
-                tags: ["资产", "跨链"],
-                link: "https://debank.com",
-                icon: "DB"
-            },
-
-            {
-                id: 15,
-                name: "Dune Analytics",
-                desc: "链上数据查询平台，SQL 分析",
-                category: "crypto",
-                tags: ["数据", "分析"],
-                link: "https://dune.com",
-                icon: "DA"
-            },
-
-            {
-                id: 16,
-                name: "Etherscan",
-                desc: "以太坊浏览器，查询交易/地址",
-                category: "crypto",
-                tags: ["以太坊", "查询"],
-                link: "https://etherscan.io",
-                icon: "ES"
-            },
-
-            {
-                id: 17,
-                name: "CoinGecko",
-                desc: "加密货币价格追踪，市值排名",
-                category: "crypto",
-                tags: ["价格", "行情"],
-                link: "https://www.coingecko.com",
-                icon: "CG"
-            },
-
+            { id: 11, name: "TON Web Wallet", desc: "TON 生态官方网页钱包，支持质押/Swap", category: "crypto", tags: ["TON", "钱包"], link: "https://wallet.ton.org", icon: "TW", badge: "hot" },
+            { id: 12, name: "MetaMask", desc: "以太坊生态必备钱包，浏览器插件", category: "crypto", tags: ["以太坊", "钱包"], link: "https://metamask.io", icon: "MM" },
+            { id: 13, name: "Phantom", desc: "Solana 生态首选钱包，支持多链", category: "crypto", tags: ["Solana", "钱包"], link: "https://phantom.app", icon: "PH" },
+            { id: 14, name: "DeBank", desc: "跨链资产看板，一键查看全网钱包", category: "crypto", tags: ["资产", "跨链"], link: "https://debank.com", icon: "DB" },
+            { id: 15, name: "Dune Analytics", desc: "链上数据查询平台，SQL 分析", category: "crypto", tags: ["数据", "分析"], link: "https://dune.com", icon: "DA" },
+            { id: 16, name: "Etherscan", desc: "以太坊浏览器，查询交易/地址", category: "crypto", tags: ["以太坊", "查询"], link: "https://etherscan.io", icon: "ES" },
+            { id: 17, name: "CoinGecko", desc: "加密货币价格追踪，市值排名", category: "crypto", tags: ["价格", "行情"], link: "https://www.coingecko.com", icon: "CG" },
+            
             // 效率办公
-            {
-                id: 18,
-                name: "Notion",
-                desc: "All-in-One 工作区，笔记/数据库",
-                category: "productivity",
-                tags: ["笔记", "协作"],
-                link: "https://www.notion.so",
-                icon: "NT",
-                badge: "hot"
-            },
-
-            {
-                id: 19,
-                name: "Google Docs",
-                desc: "在线文档编辑器，实时协作",
-                category: "productivity",
-                tags: ["文档", "免费"],
-                link: "https://docs.google.com",
-                icon: "GD",
-                badge: "free"
-            },
-
-            {
-                id: 20,
-                name: "Trello",
-                desc: "看板式项目管理，团队协作",
-                category: "productivity",
-                tags: ["项目", "管理"],
-                link: "https://trello.com",
-                icon: "TR"
-            },
-
-            {
-                id: 21,
-                name: "Canva",
-                desc: "在线设计工具，海报/演示文稿",
-                category: "productivity",
-                tags: ["设计", "模板"],
-                link: "https://www.canva.com",
-                icon: "CV"
-            },
-
-            {
-                id: 22,
-                name: "Slack",
-                desc: "团队沟通协作平台",
-                category: "productivity",
-                tags: ["沟通", "协作"],
-                link: "https://slack.com",
-                icon: "SL"
-            },
-
-            {
-                id: 23,
-                name: "Zoom",
-                desc: "视频会议软件，免费 40 分钟",
-                category: "productivity",
-                tags: ["会议", "视频"],
-                link: "https://zoom.us",
-                icon: "ZM"
-            },
-
-            {
-                id: 24,
-                name: "Evernote",
-                desc: "笔记应用，知识管理",
-                category: "productivity",
-                tags: ["笔记", "管理"],
-                link: "https://evernote.com",
-                icon: "EN"
-            },
-
-            {
-                id: 25,
-                name: "Loom",
-                desc: "屏幕录制和视频消息",
-                category: "productivity",
-                tags: ["录屏", "视频"],
-                link: "https://www.loom.com",
-                icon: "LM"
-            },
-
-            {
-                id: 26,
-                name: "Calendly",
-                desc: "在线日程安排工具",
-                category: "productivity",
-                tags: ["日程", "安排"],
-                link: "https://calendly.com",
-                icon: "CL"
-            },
-
-            {
-                id: 27,
-                name: "Zapier",
-                desc: "自动化工具，连接 3000+ 应用",
-                category: "productivity",
-                tags: ["自动化", "集成"],
-                link: "https://zapier.com",
-                icon: "ZP"
-            },
-
+            { id: 18, name: "Notion", desc: "All-in-One 工作区，笔记/数据库", category: "productivity", tags: ["笔记", "协作"], link: "https://www.notion.so", icon: "NT", badge: "hot" },
+            { id: 19, name: "Google Docs", desc: "在线文档编辑器，实时协作", category: "productivity", tags: ["文档", "免费"], link: "https://docs.google.com", icon: "GD", badge: "free" },
+            { id: 20, name: "Trello", desc: "看板式项目管理，团队协作", category: "productivity", tags: ["项目", "管理"], link: "https://trello.com", icon: "TR" },
+            { id: 21, name: "Canva", desc: "在线设计工具，海报/演示文稿", category: "productivity", tags: ["设计", "模板"], link: "https://www.canva.com", icon: "CV" },
+            { id: 22, name: "Slack", desc: "团队沟通协作平台", category: "productivity", tags: ["沟通", "协作"], link: "https://slack.com", icon: "SL" },
+            { id: 23, name: "Zoom", desc: "视频会议软件，免费 40 分钟", category: "productivity", tags: ["会议", "视频"], link: "https://zoom.us", icon: "ZM" },
+            { id: 24, name: "Evernote", desc: "笔记应用，知识管理", category: "productivity", tags: ["笔记", "管理"], link: "https://evernote.com", icon: "EN" },
+            { id: 25, name: "Loom", desc: "屏幕录制和视频消息", category: "productivity", tags: ["录屏", "视频"], link: "https://www.loom.com", icon: "LM" },
+            { id: 26, name: "Calendly", desc: "在线日程安排工具", category: "productivity", tags: ["日程", "安排"], link: "https://calendly.com", icon: "CL" },
+            { id: 27, name: "Zapier", desc: "自动化工具，连接 3000+ 应用", category: "productivity", tags: ["自动化", "集成"], link: "https://zapier.com", icon: "ZP" },
+            
             // 设计创作
-            {
-                id: 28,
-                name: "Figma",
-                desc: "在线 UI/UX 设计工具，免费版够用",
-                category: "design",
-                tags: ["UI", "设计"],
-                link: "https://www.figma.com",
-                icon: "FG",
-                badge: "free"
-            },
-
-            {
-                id: 29,
-                name: "Photopea",
-                desc: "在线版 Photoshop，完全免费",
-                category: "design",
-                tags: ["修图", "免费"],
-                link: "https://www.photopea.com",
-                icon: "PP",
-                badge: "free"
-            },
-
-            {
-                id: 30,
-                name: "Remove.bg",
-                desc: "AI 一键移除图片背景",
-                category: "design",
-                tags: ["图片", "AI"],
-                link: "https://www.remove.bg",
-                icon: "RB",
-                badge: "free"
-            },
-
-            {
-                id: 31,
-                name: "Unsplash",
-                desc: "高质量免费图库，百万张照片",
-                category: "design",
-                tags: ["图片", "免费"],
-                link: "https://unsplash.com",
-                icon: "US",
-                badge: "free"
-            },
-
-            {
-                id: 32,
-                name: "Pexels",
-                desc: "免费图库和视频素材",
-                category: "design",
-                tags: ["图片", "视频"],
-                link: "https://www.pexels.com",
-                icon: "PX",
-                badge: "free"
-            },
-
-            {
-                id: 33,
-                name: "Adobe Express",
-                desc: "Adobe 在线设计工具",
-                category: "design",
-                tags: ["设计", "Adobe"],
-                link: "https://www.adobe.com/express",
-                icon: "AE"
-            },
-
+            { id: 28, name: "Figma", desc: "在线 UI/UX 设计工具，免费版够用", category: "design", tags: ["UI", "设计"], link: "https://www.figma.com", icon: "FG", badge: "free" },
+            { id: 29, name: "Photopea", desc: "在线版 Photoshop，完全免费", category: "design", tags: ["修图", "免费"], link: "https://www.photopea.com", icon: "PP", badge: "free" },
+            { id: 30, name: "Remove.bg", desc: "AI 一键移除图片背景", category: "design", tags: ["图片", "AI"], link: "https://www.remove.bg", icon: "RB", badge: "free" },
+            { id: 31, name: "Unsplash", desc: "高质量免费图库，百万张照片", category: "design", tags: ["图片", "免费"], link: "https://unsplash.com", icon: "US", badge: "free" },
+            { id: 32, name: "Pexels", desc: "免费图库和视频素材", category: "design", tags: ["图片", "视频"], link: "https://www.pexels.com", icon: "PX", badge: "free" },
+            { id: 33, name: "Adobe Express", desc: "Adobe 在线设计工具", category: "design", tags: ["设计", "Adobe"], link: "https://www.adobe.com/express", icon: "AE" },
+            
             // 开发工具
-            {
-                id: 34,
-                name: "GitHub",
-                desc: "代码托管平台，开源协作",
-                category: "dev",
-                tags: ["代码", "Git"],
-                link: "https://github.com",
-                icon: "GH"
-            },
-
-            {
-                id: 35,
-                name: "CodePen",
-                desc: "前端代码在线编辑和展示",
-                category: "dev",
-                tags: ["前端", "代码"],
-                link: "https://codepen.io",
-                icon: "CP"
-            },
-
-            {
-                id: 36,
-                name: "Replit",
-                desc: "在线 IDE，支持 50+ 语言",
-                category: "dev",
-                tags: ["IDE", "免费"],
-                link: "https://replit.com",
-                icon: "RP",
-                badge: "free"
-            },
-
-            {
-                id: 37,
-                name: "Stack Overflow",
-                desc: "程序员问答社区",
-                category: "dev",
-                tags: ["问答", "编程"],
-                link: "https://stackoverflow.com",
-                icon: "SO"
-            },
-
-            {
-                id: 38,
-                name: "VS Code",
-                desc: "微软免费代码编辑器",
-                category: "dev",
-                tags: ["编辑器", "免费"],
-                link: "https://code.visualstudio.com",
-                icon: "VC",
-                badge: "free"
-            },
-
-            {
-                id: 39,
-                name: "Postman",
-                desc: "API 开发和测试工具",
-                category: "dev",
-                tags: ["API", "测试"],
-                link: "https://www.postman.com",
-                icon: "PM"
-            },
-
+            { id: 34, name: "GitHub", desc: "代码托管平台，开源协作", category: "dev", tags: ["代码", "Git"], link: "https://github.com", icon: "GH" },
+            { id: 35, name: "CodePen", desc: "前端代码在线编辑和展示", category: "dev", tags: ["前端", "代码"], link: "https://codepen.io", icon: "CP" },
+            { id: 36, name: "Replit", desc: "在线 IDE，支持 50+ 语言", category: "dev", tags: ["IDE", "免费"], link: "https://replit.com", icon: "RP", badge: "free" },
+            { id: 37, name: "Stack Overflow", desc: "程序员问答社区", category: "dev", tags: ["问答", "编程"], link: "https://stackoverflow.com", icon: "SO" },
+            { id: 38, name: "VS Code", desc: "微软免费代码编辑器", category: "dev", tags: ["编辑器", "免费"], link: "https://code.visualstudio.com", icon: "VC", badge: "free" },
+            { id: 39, name: "Postman", desc: "API 开发和测试工具", category: "dev", tags: ["API", "测试"], link: "https://www.postman.com", icon: "PM" },
+            
             // 影音娱乐
-            {
-                id: 40,
-                name: "YouTube",
-                desc: "全球最大的视频平台",
-                category: "media",
-                tags: ["视频", "音乐"],
-                link: "https://www.youtube.com",
-                icon: "YT"
-            },
-
-            {
-                id: 41,
-                name: "Spotify",
-                desc: "全球最大音乐流媒体",
-                category: "media",
-                tags: ["音乐", "流媒体"],
-                link: "https://www.spotify.com",
-                icon: "SP"
-            },
-
-            {
-                id: 42,
-                name: "Twitch",
-                desc: "游戏直播平台",
-                category: "media",
-                tags: ["直播", "游戏"],
-                link: "https://www.twitch.tv",
-                icon: "TW"
-            },
-
-            {
-                id: 43,
-                name: "Internet Archive",
-                desc: "公有领域电影/老片库，完全免费",
-                category: "media",
-                tags: ["电影", "免费"],
-                link: "https://archive.org",
-                icon: "IA",
-                badge: "free"
-            },
-
+            { id: 40, name: "YouTube", desc: "全球最大的视频平台", category: "media", tags: ["视频", "音乐"], link: "https://www.youtube.com", icon: "YT" },
+            { id: 41, name: "Spotify", desc: "全球最大音乐流媒体", category: "media", tags: ["音乐", "流媒体"], link: "https://www.spotify.com", icon: "SP" },
+            { id: 42, name: "Twitch", desc: "游戏直播平台", category: "media", tags: ["直播", "游戏"], link: "https://www.twitch.tv", icon: "TW" },
+            { id: 43, name: "Internet Archive", desc: "公有领域电影/老片库，完全免费", category: "media", tags: ["电影", "免费"], link: "https://archive.org", icon: "IA", badge: "free" },
+            
             // 在线游戏
-            {
-                id: 44,
-                name: "CrazyGames",
-                desc: "免费在线游戏平台",
-                category: "games",
-                tags: ["游戏", "免费"],
-                link: "https://www.crazygames.com",
-                icon: "CG",
-                badge: "free"
-            },
-
-            {
-                id: 45,
-                name: "Poki",
-                desc: "免费在线游戏网站",
-                category: "games",
-                tags: ["游戏", "休闲"],
-                link: "https://poki.com",
-                icon: "PK",
-                badge: "free"
-            },
-
-            {
-                id: 46,
-                name: "Chess.com",
-                desc: "国际象棋平台，在线对战",
-                category: "games",
-                tags: ["象棋", "策略"],
-                link: "https://www.chess.com",
-                icon: "CH"
-            },
-
-            {
-                id: 47,
-                name: "GeForce NOW",
-                desc: "NVIDIA 云游戏服务",
-                category: "games",
-                tags: ["云游戏", "NVIDIA"],
-                link: "https://www.nvidia.com/geforce-now",
-                icon: "GF"
-            },
-
+            { id: 44, name: "CrazyGames", desc: "免费在线游戏平台", category: "games", tags: ["游戏", "免费"], link: "https://www.crazygames.com", icon: "CG", badge: "free" },
+            { id: 45, name: "Poki", desc: "免费在线游戏网站", category: "games", tags: ["游戏", "休闲"], link: "https://poki.com", icon: "PK", badge: "free" },
+            { id: 46, name: "Chess.com", desc: "国际象棋平台，在线对战", category: "games", tags: ["象棋", "策略"], link: "https://www.chess.com", icon: "CH" },
+            { id: 47, name: "GeForce NOW", desc: "NVIDIA 云游戏服务", category: "games", tags: ["云游戏", "NVIDIA"], link: "https://www.nvidia.com/geforce-now", icon: "GF" },
+            
             // 安全隐私
-            {
-                id: 48,
-                name: "Bitwarden",
-                desc: "开源密码管理器，免费使用",
-                category: "security",
-                tags: ["密码", "免费"],
-                link: "https://bitwarden.com",
-                icon: "BW",
-                badge: "free"
-            },
-
-            {
-                id: 49,
-                name: "Proton Mail",
-                desc: "瑞士加密邮箱，免费 1GB",
-                category: "security",
-                tags: ["邮箱", "加密"],
-                link: "https://proton.me",
-                icon: "PM",
-                badge: "free"
-            },
-
-            {
-                id: 50,
-                name: "DuckDuckGo",
-                desc: "隐私搜索引擎，不追踪",
-                category: "security",
-                tags: ["搜索", "隐私"],
-                link: "https://duckduckgo.com",
-                icon: "DD",
-                badge: "free"
-            },
-
-            {
-                id: 51,
-                name: "1Password",
-                desc: "专业密码管理器",
-                category: "security",
-                tags: ["密码", "安全"],
-                link: "https://1password.com",
-                icon: "1P"
-            },
-
+            { id: 48, name: "Bitwarden", desc: "开源密码管理器，免费使用", category: "security", tags: ["密码", "免费"], link: "https://bitwarden.com", icon: "BW", badge: "free" },
+            { id: 49, name: "Proton Mail", desc: "瑞士加密邮箱，免费 1GB", category: "security", tags: ["邮箱", "加密"], link: "https://proton.me", icon: "PM", badge: "free" },
+            { id: 50, name: "DuckDuckGo", desc: "隐私搜索引擎，不追踪", category: "security", tags: ["搜索", "隐私"], link: "https://duckduckgo.com", icon: "DD", badge: "free" },
+            { id: 51, name: "1Password", desc: "专业密码管理器", category: "security", tags: ["密码", "安全"], link: "https://1password.com", icon: "1P" },
+            
             // 学习教育
-            {
-                id: 52,
-                name: "Khan Academy",
-                desc: "免费在线教育平台",
-                category: "education",
-                tags: ["教育", "免费"],
-                link: "https://www.khanacademy.org",
-                icon: "KA",
-                badge: "free"
-            },
-
-            {
-                id: 53,
-                name: "Coursera",
-                desc: "在线课程平台，名校课程",
-                category: "education",
-                tags: ["课程", "大学"],
-                link: "https://www.coursera.org",
-                icon: "CO"
-            },
-
-            {
-                id: 54,
-                name: "Duolingo",
-                desc: "免费学语言，游戏化学习",
-                category: "education",
-                tags: ["语言", "免费"],
-                link: "https://www.duolingo.com",
-                icon: "DL",
-                badge: "free"
-            },
-
-            {
-                id: 55,
-                name: "Udemy",
-                desc: "在线课程平台，技能学习",
-                category: "education",
-                tags: ["课程", "技能"],
-                link: "https://www.udemy.com",
-                icon: "UD"
-            },
-
-            {
-                id: 56,
-                name: "edX",
-                desc: "哈佛/MIT 在线课程",
-                category: "education",
-                tags: ["课程", "名校"],
-                link: "https://www.edx.org",
-                icon: "ED"
-            },
-
-            {
-                id: 57,
-                name: "Wikipedia",
-                desc: "免费百科全书，知识查询",
-                category: "education",
-                tags: ["百科", "免费"],
-                link: "https://www.wikipedia.org",
-                icon: "WK",
-                badge: "free"
-            }
-
+            { id: 52, name: "Khan Academy", desc: "免费在线教育平台", category: "education", tags: ["教育", "免费"], link: "https://www.khanacademy.org", icon: "KA", badge: "free" },
+            { id: 53, name: "Coursera", desc: "在线课程平台，名校课程", category: "education", tags: ["课程", "大学"], link: "https://www.coursera.org", icon: "CO" },
+            { id: 54, name: "Duolingo", desc: "免费学语言，游戏化学习", category: "education", tags: ["语言", "免费"], link: "https://www.duolingo.com", icon: "DL", badge: "free" },
+            { id: 55, name: "Udemy", desc: "在线课程平台，技能学习", category: "education", tags: ["课程", "技能"], link: "https://www.udemy.com", icon: "UD" },
+            { id: 56, name: "edX", desc: "哈佛/MIT 在线课程", category: "education", tags: ["课程", "名校"], link: "https://www.edx.org", icon: "ED" },
+            { id: 57, name: "Wikipedia", desc: "免费百科全书，知识查询", category: "education", tags: ["百科", "免费"], link: "https://www.wikipedia.org", icon: "WK", badge: "free" }
         ];
 
         const toolsGrid = document.getElementById('toolsGrid');
@@ -1654,448 +889,411 @@
         let currentCategory = 'all';
         let currentSearch = '';
 
+        function getFavorites() {
+            try { return JSON.parse(localStorage.getItem('favoriteTools') || '[]'); }
+            catch(e) { return []; }
+        }
+
+        function saveFavorites(list) {
+            localStorage.setItem('favoriteTools', JSON.stringify(list));
+            updateFavoriteBar();
+        }
+
+        function toggleFavorite(id) {
+            let list = getFavorites();
+            if (list.includes(id)) list = list.filter(x => x !== id);
+            else list.push(id);
+            saveFavorites(list);
+    
+        // ===== 随机发现工具 =====
+        document.getElementById('randomToolBtn').addEventListener('click', () => {
+            const btn = document.getElementById('randomToolBtn');
+            const name = document.getElementById('randomToolName');
+            const desc = document.getElementById('randomToolDesc');
+            const result = document.getElementById('randomToolResult');
+
+            btn.disabled = true;
+            let ticks = 0;
+            const timer = setInterval(() => {
+                const pick = TOOLS_DATA[Math.floor(Math.random() * TOOLS_DATA.length)];
+                name.textContent = pick.name;
+                desc.textContent = pick.desc;
+                result.textContent = '✨ 正在为你挑选……';
+                ticks++;
+                if (ticks >= 8) {
+                    clearInterval(timer);
+                    const finalPick = TOOLS_DATA[Math.floor(Math.random() * TOOLS_DATA.length)];
+                    name.textContent = finalPick.name;
+                    desc.textContent = finalPick.desc;
+                    result.innerHTML = `<a href="${finalPick.link}" target="_blank" rel="noopener noreferrer"
+                        style="color:var(--primary);text-decoration:none;">🚀 立即打开这个工具 →</a>`;
+                    btn.disabled = false;
+                    if (typeof gtag === 'function') gtag('event', 'random_tool', {tool_name: finalPick.name, tool_id: finalPick.id});
+                }
+            }, 90);
+        });
+
+        // ===== 小游戏 =====
+        document.querySelectorAll('[data-game]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const game = btn.dataset.game;
+                const stage = document.getElementById(game + 'Stage');
+                stage.classList.toggle('show');
+                if (typeof gtag === 'function') gtag('event', 'game_open', {game_name: game});
+                if (game === 'memory') startMemoryGame();
+                if (game === 'reaction') resetReaction();
+                if (game === 'clicker') resetClicker();
+            });
+        });
+
+        // 反应力
+        let reactionTimer = null, reactionStart = 0, reactionWaiting = false, reactionRunning = false;
+        const reactionTarget = document.getElementById('reactionTarget');
+        const reactionStatus = document.getElementById('reactionStatus');
+        const reactionScore = document.getElementById('reactionScore');
+        const reactionBest = document.getElementById('reactionBest');
+
+        function resetReaction() {
+            clearTimeout(reactionTimer);
+            reactionWaiting = false; reactionRunning = false;
+            reactionTarget.className = 'reaction-target';
+            reactionTarget.textContent = '等待变绿……';
+            reactionStatus.textContent = '准备中';
+            reactionScore.textContent = '—';
+            const best = localStorage.getItem('reactionBest');
+            reactionBest.textContent = best ? best + ' ms' : '—';
+            reactionTimer = setTimeout(() => {
+                reactionWaiting = true;
+                reactionTarget.className = 'reaction-target ready';
+                reactionTarget.textContent = '点！';
+                reactionStatus.textContent = '现在！';
+                reactionStart = performance.now();
+                reactionRunning = true;
+            }, 900 + Math.random() * 2600);
+        }
+
+        reactionTarget.addEventListener('click', () => {
+            if (!reactionWaiting && !reactionRunning) {
+                resetReaction();
+                return;
+            }
+            if (!reactionWaiting && reactionRunning) {
+                clearTimeout(reactionTimer);
+                reactionRunning = false;
+                reactionTarget.className = 'reaction-target wait';
+                reactionTarget.textContent = '太早了！';
+                reactionStatus.textContent = '别急，等绿色出现。点击重新开始';
+                return;
+            }
+            const ms = Math.round(performance.now() - reactionStart);
+            reactionWaiting = false; reactionRunning = false;
+            reactionTarget.className = 'reaction-target';
+            reactionTarget.textContent = '再来一次';
+            reactionScore.textContent = ms + ' ms';
+            const best = Number(localStorage.getItem('reactionBest') || 99999);
+            if (ms < best) {
+                localStorage.setItem('reactionBest', ms);
+                reactionBest.textContent = ms + ' ms';
+                reactionStatus.textContent = '🔥 新纪录！';
+            } else {
+                reactionBest.textContent = best + ' ms';
+                reactionStatus.textContent = '不错，再试一次？';
+            }
+            if (typeof gtag === 'function') gtag('event', 'game_score', {game_name:'reaction', score:ms});
+        });
+
+        // 记忆翻牌
+        let memoryFirst = null, memoryLock = false, memoryMatched = 0, memoryMoves = 0;
+        function startMemoryGame() {
+            const grid = document.getElementById('memoryGrid');
+            const status = document.getElementById('memoryStatus');
+            const icons = ['🚀','🎨','🤖','💎','🎮','🔒','⚡','🌙'];
+            const cards = [...icons, ...icons].sort(() => Math.random() - .5);
+            memoryFirst = null; memoryLock = false; memoryMatched = 0; memoryMoves = 0;
+            grid.innerHTML = cards.map((icon, i) =>
+                `<button class="memory-card" data-index="${i}" data-value="${icon}">?</button>`
+            ).join('');
+            status.textContent = '配对 8 对图案 · 0 步';
+            grid.querySelectorAll('.memory-card').forEach(card => card.addEventListener('click', () => flipMemory(card)));
+        }
+        function flipMemory(card) {
+            if (memoryLock || card.classList.contains('open') || card.classList.contains('matched')) return;
+            card.classList.add('open');
+            card.textContent = card.dataset.value;
+            if (!memoryFirst) { memoryFirst = card; return; }
+            memoryMoves++;
+            const second = card;
+            if (memoryFirst.dataset.value === second.dataset.value) {
+                memoryFirst.classList.add('matched'); second.classList.add('matched');
+                memoryMatched++;
+                memoryFirst = null;
+                document.getElementById('memoryStatus').textContent = `已完成 ${memoryMatched}/8 对 · ${memoryMoves} 步`;
+                if (memoryMatched === 8) {
+                    document.getElementById('memoryStatus').textContent = `🎉 完成！共 ${memoryMoves} 步`;
+                    if (typeof gtag === 'function') gtag('event', 'game_score', {game_name:'memory', score:memoryMoves});
+                }
+            } else {
+                memoryLock = true;
+                setTimeout(() => {
+                    memoryFirst.classList.remove('open'); memoryFirst.textContent = '?';
+                    second.classList.remove('open'); second.textContent = '?';
+                    memoryFirst = null; memoryLock = false;
+                    document.getElementById('memoryStatus').textContent = `配对 8 对图案 · ${memoryMoves} 步`;
+                }, 650);
+            }
+        }
+
+        // 10 秒点击挑战
+        let clickerCount = 0, clickerTimer = null, clickerEnd = 0;
+        function resetClicker() {
+            clearInterval(clickerTimer);
+            clickerCount = 0;
+            document.getElementById('clickerScore').textContent = '0';
+            document.getElementById('clickerStatus').textContent = '点击下面按钮开始，倒计时 10 秒';
+            const target = document.getElementById('clickerTarget');
+            target.textContent = '点击我！';
+            target.disabled = false;
+            clickerEnd = 0;
+        }
+        document.getElementById('clickerTarget').addEventListener('click', () => {
+            if (!clickerEnd) {
+                clickerEnd = Date.now() + 10000;
+                document.getElementById('clickerStatus').textContent = '🔥 开始！';
+                clickerTimer = setInterval(() => {
+                    const left = Math.max(0, clickerEnd - Date.now());
+                    document.getElementById('clickerStatus').textContent = `剩余 ${(left/1000).toFixed(1)} 秒`;
+                    if (!left) {
+                        clearInterval(clickerTimer);
+                        clickerEnd = 0;
+                        document.getElementById('clickerTarget').disabled = true;
+                        document.getElementById('clickerStatus').textContent = `🎉 时间到！你点击了 ${clickerCount} 次`;
+                        if (typeof gtag === 'function') gtag('event', 'game_score', {game_name:'clicker', score:clickerCount});
+                    }
+                }, 100);
+            }
+            if (clickerEnd) {
+                clickerCount++;
+                document.getElementById('clickerScore').textContent = clickerCount;
+            }
+        });
+
+        document.getElementById('showFavoritesBtn').addEventListener('click', () => {
+            favoritesOnly = !favoritesOnly;
+            document.getElementById('showFavoritesBtn').textContent = favoritesOnly ? '显示全部工具' : '只看收藏';
+            renderTools();
+        });
+
+        renderTools();
+            if (typeof gtag === 'function') gtag('event', 'favorite_tool', {tool_id: id, action: list.includes(id) ? 'add' : 'remove'});
+        }
+
+        function updateFavoriteBar() {
+            const list = getFavorites();
+            const bar = document.getElementById('favoritesBar');
+            document.getElementById('favoriteCount').textContent = list.length;
+            bar.style.display = list.length ? 'flex' : 'none';
+        }
+
+        let favoritesOnly = false;
+
         function renderTools() {
-
+            const favorites = getFavorites();
             const filtered = TOOLS_DATA.filter(tool => {
-
-                const matchCategory =
-                    currentCategory === 'all' ||
-                    tool.category === currentCategory;
-
-                const matchSearch =
-                    !currentSearch ||
+                const matchCategory = currentCategory === 'all' || tool.category === currentCategory;
+                const matchSearch = !currentSearch ||
                     tool.name.toLowerCase().includes(currentSearch.toLowerCase()) ||
                     tool.desc.toLowerCase().includes(currentSearch.toLowerCase()) ||
-                    tool.tags.some(tag =>
-                        tag.toLowerCase().includes(currentSearch.toLowerCase())
-                    );
-
-                return matchCategory && matchSearch;
+                    tool.tags.some(tag => tag.toLowerCase().includes(currentSearch.toLowerCase()));
+                const matchFavorite = !favoritesOnly || favorites.includes(tool.id);
+                return matchCategory && matchSearch && matchFavorite;
             });
 
             if (filtered.length === 0) {
-
                 toolsGrid.innerHTML = `
                     <div class="empty-state">
-
-                        <svg viewBox="0 0 24 24"
-                             fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             width="80"
-                             height="80">
-
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-
-                        </svg>
-
-                        <h3 style="margin-top:16px">
-                            未找到匹配的工具
-                        </h3>
-
-                        <p>
-                            试试其他关键词或切换分类
-                        </p>
-
+                        <div style="font-size:48px;">🔎</div>
+                        <h3 style="margin-top:16px">没有找到匹配的工具</h3>
+                        <p>试试其他关键词、分类，或者取消“只看收藏”。</p>
                     </div>
                 `;
-
                 return;
             }
 
             toolsGrid.innerHTML = filtered.map((tool, index) => {
-
-                const badgeHTML =
-                    tool.badge
-                    ? `<span class="tool-badge badge-${tool.badge}">${tool.badge}</span>`
-                    : '';
-
+                const badgeHTML = tool.badge ? `<span class="tool-badge badge-${tool.badge}">${tool.badge}</span>` : '';
+                const isFav = favorites.includes(tool.id);
+                const safeLink = tool.link.replace(/'/g, "\\'");
                 return `
-
-                    <div class="tool-card"
-                         style="animation-delay: ${index * 0.05}s">
-
+                    <div class="tool-card ${isFav ? 'favorite-card' : ''}" style="animation-delay:${index * 0.04}s">
                         ${badgeHTML}
-
+                        <button class="favorite-btn ${isFav ? 'active' : ''}" title="${isFav ? '取消收藏' : '收藏工具'}"
+                            onclick="toggleFavorite(${tool.id})">${isFav ? '★' : '☆'}</button>
                         <div class="tool-header">
-
-                            <div class="tool-icon">
-                                ${tool.icon}
-                            </div>
-
+                            <div class="tool-icon">${tool.icon}</div>
                             <div class="tool-info">
-
-                                <div class="tool-name">
-                                    ${tool.name}
-                                </div>
-
-                                <div class="tool-desc">
-                                    ${tool.desc}
-                                </div>
-
+                                <div class="tool-name">${tool.name}</div>
+                                <div class="tool-desc">${tool.desc}</div>
                             </div>
-
                         </div>
-
                         <div class="tool-tags">
-
-                            ${tool.tags.map(tag =>
-                                `<span class="tag">${tag}</span>`
-                            ).join('')}
-
+                            ${tool.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                         </div>
-
                         <div class="tool-actions">
-
-                            <a href="${tool.link}"
-                               target="_blank"
-                               class="btn-visit">
-                                立即使用
-                            </a>
-
-                            <button class="btn-copy"
-                                    onclick="navigator.clipboard.writeText('${tool.link}').then(()=>alert('已复制')).catch(()=>prompt('请复制:', '${tool.link}'))">
-                                复制
-                            </button>
-
+                            <a href="${tool.link}" target="_blank" rel="noopener noreferrer" class="btn-visit"
+                               onclick="trackToolClick(${tool.id}, '${safeLink}')">立即使用</a>
+                            <button class="btn-copy" onclick="copyToolLink('${safeLink}', ${tool.id})">复制</button>
                         </div>
-
                     </div>
-
                 `;
-
             }).join('');
         }
 
+        function copyToolLink(link, id) {
+            const done = () => {
+                const tool = TOOLS_DATA.find(t => t.id === id);
+                if (typeof gtag === 'function') gtag('event', 'copy_tool_link', {tool_name: tool ? tool.name : id});
+                alert('已复制工具链接');
+            };
+            navigator.clipboard.writeText(link).then(done).catch(() => prompt('请复制：', link));
+        }
+
+        function trackToolClick(id, link) {
+            const tool = TOOLS_DATA.find(t => t.id === id);
+            if (typeof gtag === 'function') {
+                gtag('event', 'tool_click', {
+                    tool_id: id,
+                    tool_name: tool ? tool.name : String(id),
+                    tool_url: link
+                });
+            }
+        }
+
+        function trackTelegram(label) {
+            if (typeof gtag === 'function') {
+                gtag('event', 'telegram_click', {
+                    event_category: 'Telegram',
+                    event_label: label,
+                    link_url: 'https://t.me/cxsns'
+                });
+            }
+        }
+
         searchInput.addEventListener('input', (e) => {
-
             currentSearch = e.target.value.trim();
-
             renderTools();
-
         });
 
         categoryContainer.addEventListener('click', (e) => {
-
-            const chip =
-                e.target.closest('.category-chip');
-
+            const chip = e.target.closest('.category-chip');
             if (!chip) return;
-
-            categoryContainer
-                .querySelectorAll('.category-chip')
-                .forEach(c =>
-                    c.classList.remove('active')
-                );
-
+            categoryContainer.querySelectorAll('.category-chip').forEach(c => c.classList.remove('active'));
             chip.classList.add('active');
-
-            currentCategory =
-                chip.dataset.category;
-
+            currentCategory = chip.dataset.category;
             renderTools();
-
         });
 
         themeToggle.addEventListener('click', () => {
-
-            const isDark =
-                document.documentElement.getAttribute('data-theme') === 'dark';
-
-            document.documentElement.setAttribute(
-                'data-theme',
-                isDark ? 'light' : 'dark'
-            );
-
-            localStorage.setItem(
-                'theme',
-                isDark ? 'light' : 'dark'
-            );
-
-            themeToggle.textContent =
-                isDark ? '☀️' : '🌙';
-
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            localStorage.setItem('theme', isDark ? 'light' : 'dark');
+            themeToggle.textContent = isDark ? '☀️' : '🌙';
         });
 
+        updateFavoriteBar();
+
         // 初始化主题
-        const savedTheme =
-            localStorage.getItem('theme');
-
+        const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'dark') {
-
-            document.documentElement.setAttribute(
-                'data-theme',
-                'dark'
-            );
-
+            document.documentElement.setAttribute('data-theme', 'dark');
             themeToggle.textContent = '☀️';
         }
 
         // 汇率计算器
         let exchangeRates = null;
-
         let ratesCacheTime = 0;
-
-        const RATES_CACHE_DURATION =
-            10 * 60 * 1000;
+        const RATES_CACHE_DURATION = 10 * 60 * 1000;
 
         async function fetchRates() {
-
             const now = Date.now();
-
-            if (
-                exchangeRates &&
-                (now - ratesCacheTime) <
-                RATES_CACHE_DURATION
-            ) {
+            if (exchangeRates && (now - ratesCacheTime) < RATES_CACHE_DURATION) {
                 return exchangeRates;
             }
-
             try {
-
-                const res =
-                    await fetch(
-                        'https://open.er-api.com/v6/latest/USD'
-                    );
-
-                if (!res.ok)
-                    throw new Error('获取失败');
-
-                const data =
-                    await res.json();
-
-                exchangeRates =
-                    data.rates ||
-                    data.conversion_rates;
-
+                const res = await fetch('https://open.er-api.com/v6/latest/USD');
+                if (!res.ok) throw new Error('获取失败');
+                const data = await res.json();
+                exchangeRates = data.rates || data.conversion_rates;
                 ratesCacheTime = now;
-
                 return exchangeRates;
-
             } catch (err) {
-
-                console.error(
-                    '获取汇率失败:',
-                    err
-                );
-
+                console.error('获取汇率失败:', err);
                 return null;
             }
         }
 
         // 页面加载时预取汇率
         fetchRates().then(rates => {
-
-            if (rates)
-                renderMultiRates(100, rates);
-
+            if (rates) renderMultiRates(100, rates);
         });
 
-        document
-            .getElementById('convertBtn')
-            .addEventListener('click', async () => {
+        document.getElementById('convertBtn').addEventListener('click', async () => {
+            const amount = parseFloat(document.getElementById('usdtAmount').value);
+            const currency = document.getElementById('targetCurrency').value;
+            if (isNaN(amount) || amount <= 0) {
+                alert('请输入有效的 USDT 数量');
+                return;
+            }
+            
+            const btn = document.getElementById('convertBtn');
+            btn.textContent = '⏳ 获取中...';
+            btn.disabled = true;
+            
+            const rates = await fetchRates();
+            btn.textContent = '🔄 立即换算';
+            btn.disabled = false;
+            
+            if (!rates || !rates[currency]) {
+                alert('获取汇率失败，请检查网络后重试');
+                return;
+            }
+            
+            const result = amount * rates[currency];
+            const formatted = ['JPY', 'KRW', 'VND', 'IDR'].includes(currency) 
+                ? result.toLocaleString('zh-CN', { maximumFractionDigits: 0 })
+                : result.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 4 });
+            
+            document.getElementById('converterResultText').textContent = `${amount} USDT = ${formatted} ${currency}`;
+            document.getElementById('converterRate').textContent = `1 USDT ≈ ${rates[currency].toFixed(4)} ${currency} · USDT 按 1:1 锚定 USD`;
+            document.getElementById('converterResult').classList.add('show');
+            
+            renderMultiRates(amount, rates);
+        });
 
-                const amount =
-                    parseFloat(
-                        document.getElementById(
-                            'usdtAmount'
-                        ).value
-                    );
-
-                const currency =
-                    document.getElementById(
-                        'targetCurrency'
-                    ).value;
-
-                if (
-                    isNaN(amount) ||
-                    amount <= 0
-                ) {
-
-                    alert(
-                        '请输入有效的 USDT 数量'
-                    );
-
-                    return;
-                }
-
-                const btn =
-                    document.getElementById(
-                        'convertBtn'
-                    );
-
-                btn.textContent =
-                    '⏳ 获取中...';
-
-                btn.disabled = true;
-
-                const rates =
-                    await fetchRates();
-
-                btn.textContent =
-                    '🔄 立即换算';
-
-                btn.disabled = false;
-
-                if (
-                    !rates ||
-                    !rates[currency]
-                ) {
-
-                    alert(
-                        '获取汇率失败，请检查网络后重试'
-                    );
-
-                    return;
-                }
-
-                const result =
-                    amount * rates[currency];
-
-                const formatted =
-                    ['JPY', 'KRW', 'VND', 'IDR']
-                        .includes(currency)
-
-                    ? result.toLocaleString(
-                        'zh-CN',
-                        {
-                            maximumFractionDigits: 0
-                        }
-                    )
-
-                    : result.toLocaleString(
-                        'zh-CN',
-                        {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 4
-                        }
-                    );
-
-                document
-                    .getElementById(
-                        'converterResultText'
-                    )
-                    .textContent =
-                    `${amount} USDT = ${formatted} ${currency}`;
-
-                document
-                    .getElementById(
-                        'converterRate'
-                    )
-                    .textContent =
-                    `1 USDT ≈ ${rates[currency].toFixed(4)} ${currency} · USDT 按 1:1 锚定 USD`;
-
-                document
-                    .getElementById(
-                        'converterResult'
-                    )
-                    .classList.add('show');
-
-                renderMultiRates(
-                    amount,
-                    rates
-                );
-
-            });
-
-        function renderMultiRates(
-            amount,
-            rates
-        ) {
-
-            const popular = [
-                'CNY',
-                'USD',
-                'EUR',
-                'JPY',
-                'GBP',
-                'KRW',
-                'HKD',
-                'SGD',
-                'AUD',
-                'CAD',
-                'THB',
-                'TWD',
-                'VND',
-                'INR'
-            ];
-
-            const container =
-                document.getElementById(
-                    'multiRates'
-                );
-
-            container.innerHTML =
-                popular.map(code => {
-
-                    if (!rates[code])
-                        return '';
-
-                    const val =
-                        amount * rates[code];
-
-                    const formatted =
-                        ['JPY', 'KRW', 'VND', 'IDR']
-                            .includes(code)
-
-                        ? val.toLocaleString(
-                            'zh-CN',
-                            {
-                                maximumFractionDigits: 0
-                            }
-                        )
-
-                        : val.toLocaleString(
-                            'zh-CN',
-                            {
-                                minimumFractionDigits: 2,
-                                maximumFractionDigits: 2
-                            }
-                        );
-
-                    return `
-
-                        <div class="multi-rate-item">
-
-                            <div class="multi-rate-currency">
-                                ${code}
-                            </div>
-
-                            <div class="multi-rate-value">
-                                ${formatted}
-                            </div>
-
-                        </div>
-
-                    `;
-
-                }).join('');
-
-            container.style.display =
-                'grid';
+        function renderMultiRates(amount, rates) {
+            const popular = ['CNY', 'USD', 'EUR', 'JPY', 'GBP', 'KRW', 'HKD', 'SGD', 'AUD', 'CAD', 'THB', 'TWD', 'VND', 'INR'];
+            const container = document.getElementById('multiRates');
+            container.innerHTML = popular.map(code => {
+                if (!rates[code]) return '';
+                const val = amount * rates[code];
+                const formatted = ['JPY', 'KRW', 'VND', 'IDR'].includes(code)
+                    ? val.toLocaleString('zh-CN', { maximumFractionDigits: 0 })
+                    : val.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                return `
+                    <div class="multi-rate-item">
+                        <div class="multi-rate-currency">${code}</div>
+                        <div class="multi-rate-value">${formatted}</div>
+                    </div>
+                `;
+            }).join('');
+            container.style.display = 'grid';
         }
 
         // 回车键触发换算
-        document
-            .getElementById('usdtAmount')
-            .addEventListener(
-                'keypress',
-                (e) => {
-
-                    if (e.key === 'Enter')
-                        document
-                            .getElementById(
-                                'convertBtn'
-                            )
-                            .click();
-
-                }
-            );
+        document.getElementById('usdtAmount').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') document.getElementById('convertBtn').click();
+        });
 
         renderTools();
-
     </script>
-
 </body>
 </html>
